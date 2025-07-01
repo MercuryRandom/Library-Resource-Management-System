@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  font-size: 24px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: #2d6cdf;
+  padding: 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 64px;
+}
+
+nav ul li {
+  margin: 0 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #174ea6;
+}
+
+main {
+  flex: 1;
+  max-width: 1600px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
+  padding: 64px 80px 80px 80px;
+  font-size: 1.25em;
+}
+
+/* 登录/注册卡片样式 */
+.form-card {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 48px 40px 40px 40px;
+  background: #f5f7fb;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.2em;
+}
+
+.form-card label {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1em;
+  border: 1px solid #bfc8e0;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1em;
+  background: #2d6cdf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-card button:hover {
+  background: #174ea6;
+}
+
+.form-card .form-link {
+  display: block;
+  text-align: right;
+  margin-top: 12px;
+  color: #2d6cdf;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    padding: 16px 2vw;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  .form-card {
+    padding: 24px 8px 24px 8px;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
